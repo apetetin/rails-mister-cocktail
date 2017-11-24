@@ -7,6 +7,11 @@ end
 
 # Ruby version for heroku
 ruby '2.3.5'
+# Confidentiality set up
+gem 'figaro'
+# Cloudinary et carrierwave setup
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
 
 # Le Wagon config
 gem 'simple_form'
