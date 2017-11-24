@@ -3,7 +3,7 @@
 <ul>
   <% @cocktail.doses.each do |dose| %>
   <li><small><%= dose.description %></small> <%= dose.ingredient.name %></li>
-  <p><%= link_to 'Delete a dose', dose_path(dose), method: :delete %></p>
+  <p><%= link_to 'Delete a dose', dose_path(dose), method: :delete, data: { confirm: "are you sure?"} %></p>
   <% end %>
 </ul>
 
