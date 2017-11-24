@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Ruby version for heroku
+ruby '2.3.5'
+
 # Le Wagon config
 gem 'simple_form'
 gem 'autoprefixer-rails'
